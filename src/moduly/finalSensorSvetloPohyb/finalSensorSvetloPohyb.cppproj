@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>7.0</ProjectVersion>
+    <ToolchainName>com.Atmel.ARMGCC.CPP</ToolchainName>
+    <ProjectGuid>{4121add4-5b5b-4005-8802-7d40e115022f}</ProjectGuid>
+    <avrdevice>ATSAM3X8E</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>CPP</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>finalSensorSvetloPohyb</AssemblyName>
+    <Name>finalSensorSvetloPohyb</Name>
+    <RootNamespace>finalSensorSvetloPohyb</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress />
+    <UncachedRange />
+    <preserveEEPROM>true</preserveEEPROM>
+    <OverrideVtorValue />
+    <BootSegment>2</BootSegment>
+    <eraseonlaunchrule>1</eraseonlaunchrule>
+    <AsfFrameworkConfig>
+      <framework-data>
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.39.0" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+    <ResetRule>0</ResetRule>
+    <EraseKey />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <ArmGccCpp>
+  <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+  <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+  <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+  <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+  <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+  <armgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__ESP8266_ESp8266__</Value>
+      <Value>__ESP8266_ESP8266__</Value>
+      <Value>ARDUINO=108010</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=80000000L</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__ESP8266__</Value>
+      <Value>__ets__</Value>
+      <Value>ICACHE_FLASH</Value>
+      <Value>NONOSDK221=1</Value>
+      <Value>LWIP_OPEN_SRC</Value>
+      <Value>TCP_MSS=536</Value>
+      <Value>LWIP_FEATURES=1</Value>
+      <Value>LWIP_IPV6=0</Value>
+      <Value>ARDUINO_ESP8266_NODEMCU</Value>
+      <Value>ARDUINO_ARCH_ESP8266</Value>
+      <Value>FLASHMODE_DIO</Value>
+    </ListValues>
+  </armgcc.compiler.symbols.DefSymbols>
+  <armgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../finalSensorSvetloPohyb</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries/ESP8266WiFi/src</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries/EEPROM</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries/Ticker</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries/Wire</Value>
+      <Value>C:/Users/svita/Documents/Arduino/libraries/BH1750-master</Value>
+      <Value>C:/Users/svita/Documents/Arduino/libraries/MySQL_Connector_Arduino-master/src</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>C:/Users/svita/Documents/Arduino/libraries</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266/avr</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266/libb64</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266/spiffs</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266/umm_malloc</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/variants/nodemcu</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/tools/sdk/include</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/tools/sdk/lwip2/include</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/tools/sdk/libc/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-3-20ed2b9/xtensa-lx106-elf/include/c++/4.8.2</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-3-20ed2b9/xtensa-lx106-elf/include/c++/4.8.2/xtensa-lx106-elf</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-3-20ed2b9/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-3-20ed2b9/lib/gcc/xtensa-lx106-elf/4.8.2/include</Value>
+    </ListValues>
+  </armgcc.compiler.directories.IncludePaths>
+  <armgcc.compiler.optimization.level>Optimize for size (-Os)</armgcc.compiler.optimization.level>
+  <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
+  <armgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__ESP8266_ESp8266__</Value>
+      <Value>__ESP8266_ESP8266__</Value>
+      <Value>ARDUINO=108010</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=80000000L</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__ESP8266__</Value>
+      <Value>__ets__</Value>
+      <Value>ICACHE_FLASH</Value>
+      <Value>NONOSDK221=1</Value>
+      <Value>LWIP_OPEN_SRC</Value>
+      <Value>TCP_MSS=536</Value>
+      <Value>LWIP_FEATURES=1</Value>
+      <Value>LWIP_IPV6=0</Value>
+      <Value>ARDUINO_ESP8266_NODEMCU</Value>
+      <Value>ARDUINO_ARCH_ESP8266</Value>
+      <Value>FLASHMODE_DIO</Value>
+    </ListValues>
+  </armgcccpp.compiler.symbols.DefSymbols>
+  <armgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../finalSensorSvetloPohyb</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries/ESP8266WiFi/src</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries/EEPROM</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries/Ticker</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries/Wire</Value>
+      <Value>C:/Users/svita/Documents/Arduino/libraries/BH1750-master</Value>
+      <Value>C:/Users/svita/Documents/Arduino/libraries/MySQL_Connector_Arduino-master/src</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>C:/Users/svita/Documents/Arduino/libraries</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266/avr</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266/libb64</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266/spiffs</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266/umm_malloc</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/variants/nodemcu</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/tools/sdk/include</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/tools/sdk/lwip2/include</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/tools/sdk/libc/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-3-20ed2b9/xtensa-lx106-elf/include/c++/4.8.2</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-3-20ed2b9/xtensa-lx106-elf/include/c++/4.8.2/xtensa-lx106-elf</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-3-20ed2b9/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-3-20ed2b9/lib/gcc/xtensa-lx106-elf/4.8.2/include</Value>
+    </ListValues>
+  </armgcccpp.compiler.directories.IncludePaths>
+  <armgcccpp.compiler.optimization.level>Optimize for size (-Os)</armgcccpp.compiler.optimization.level>
+  <armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcccpp.compiler.warnings.AllWarnings>True</armgcccpp.compiler.warnings.AllWarnings>
+  <armgcccpp.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.Libraries>
+  <armgcccpp.linker.libraries.LibrarySearchPaths>
+    <ListValues>
+      <Value>../cmsis/linkerScripts</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.LibrarySearchPaths>
+  <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
+  <armgcccpp.linker.miscellaneous.LinkerFlags>-Tsamd21e18a_flash.ld</armgcccpp.linker.miscellaneous.LinkerFlags>
+  <armgcccpp.preprocessingassembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\samd21\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+    </ListValues>
+  </armgcccpp.preprocessingassembler.general.IncludePaths>
+</ArmGccCpp>
+    </ToolchainSettings>
+    <VMSETTING_IncludePaths>../../../finalSensorSvetloPohyb;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries/ESP8266WiFi/src;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries/EEPROM;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries/Ticker;C:/Users/svita/Documents/Arduino/libraries/DHT_sensor_library-1.3.7;C:/Users/svita/Documents/Arduino/libraries/MySQL_Connector_Arduino-master/src;C:/Program Files (x86)/Arduino/libraries;C:/Users/svita/Documents/Arduino/libraries;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266/avr;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266/libb64;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266/spiffs;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266/umm_malloc;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/variants/nodemcu;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/tools/sdk/include;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/tools/sdk/lwip/include;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/tools/sdk/libc/xtensa-lx106-elf/include;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-3-20ed2b9/xtensa-lx106-elf/include/c++/4.8.2;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-3-20ed2b9/xtensa-lx106-elf/include/c++/4.8.2/xtensa-lx106-elf;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-3-20ed2b9/xtensa-lx106-elf/include;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-3-20ed2b9/lib/gcc/xtensa-lx106-elf/4.8.2/include;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/tools/sdk/lwip2/include;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries/Wire;C:/Users/svita/Documents/Arduino/libraries/BH1750-master;{build.path}/core;</VMSETTING_IncludePaths>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <ArmGccCpp>
+  <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+  <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+  <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+  <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+  <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+  <armgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__ESP8266_ESp8266__</Value>
+      <Value>__ESP8266_ESP8266__</Value>
+      <Value>ARDUINO=108010</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=80000000L</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__ESP8266__</Value>
+      <Value>__ets__</Value>
+      <Value>ICACHE_FLASH</Value>
+      <Value>NONOSDK221=1</Value>
+      <Value>LWIP_OPEN_SRC</Value>
+      <Value>TCP_MSS=536</Value>
+      <Value>LWIP_FEATURES=1</Value>
+      <Value>LWIP_IPV6=0</Value>
+      <Value>ARDUINO_ESP8266_NODEMCU</Value>
+      <Value>ARDUINO_ARCH_ESP8266</Value>
+      <Value>FLASHMODE_DIO</Value>
+    </ListValues>
+  </armgcc.compiler.symbols.DefSymbols>
+  <armgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../finalSensorSvetloPohyb</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries/ESP8266WiFi/src</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries/EEPROM</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries/Ticker</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries/Wire</Value>
+      <Value>C:/Users/svita/Documents/Arduino/libraries/BH1750-master</Value>
+      <Value>C:/Users/svita/Documents/Arduino/libraries/MySQL_Connector_Arduino-master/src</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>C:/Users/svita/Documents/Arduino/libraries</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266/avr</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266/libb64</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266/spiffs</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266/umm_malloc</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/variants/nodemcu</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/tools/sdk/include</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/tools/sdk/lwip2/include</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/tools/sdk/libc/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-3-20ed2b9/xtensa-lx106-elf/include/c++/4.8.2</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-3-20ed2b9/xtensa-lx106-elf/include/c++/4.8.2/xtensa-lx106-elf</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-3-20ed2b9/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-3-20ed2b9/lib/gcc/xtensa-lx106-elf/4.8.2/include</Value>
+    </ListValues>
+  </armgcc.compiler.directories.IncludePaths>
+  <armgcc.compiler.optimization.level>Optimize for size (-Os)</armgcc.compiler.optimization.level>
+  <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
+  <armgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__ESP8266_ESp8266__</Value>
+      <Value>__ESP8266_ESP8266__</Value>
+      <Value>ARDUINO=108010</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=80000000L</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__ESP8266__</Value>
+      <Value>__ets__</Value>
+      <Value>ICACHE_FLASH</Value>
+      <Value>NONOSDK221=1</Value>
+      <Value>LWIP_OPEN_SRC</Value>
+      <Value>TCP_MSS=536</Value>
+      <Value>LWIP_FEATURES=1</Value>
+      <Value>LWIP_IPV6=0</Value>
+      <Value>ARDUINO_ESP8266_NODEMCU</Value>
+      <Value>ARDUINO_ARCH_ESP8266</Value>
+      <Value>FLASHMODE_DIO</Value>
+    </ListValues>
+  </armgcccpp.compiler.symbols.DefSymbols>
+  <armgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../finalSensorSvetloPohyb</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries/ESP8266WiFi/src</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries/EEPROM</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries/Ticker</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries/Wire</Value>
+      <Value>C:/Users/svita/Documents/Arduino/libraries/BH1750-master</Value>
+      <Value>C:/Users/svita/Documents/Arduino/libraries/MySQL_Connector_Arduino-master/src</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>C:/Users/svita/Documents/Arduino/libraries</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266/avr</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266/libb64</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266/spiffs</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266/umm_malloc</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/variants/nodemcu</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/tools/sdk/include</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/tools/sdk/lwip2/include</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/tools/sdk/libc/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-3-20ed2b9/xtensa-lx106-elf/include/c++/4.8.2</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-3-20ed2b9/xtensa-lx106-elf/include/c++/4.8.2/xtensa-lx106-elf</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-3-20ed2b9/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/svita/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-3-20ed2b9/lib/gcc/xtensa-lx106-elf/4.8.2/include</Value>
+    </ListValues>
+  </armgcccpp.compiler.directories.IncludePaths>
+  <armgcccpp.compiler.optimization.level>Optimize for size (-Os)</armgcccpp.compiler.optimization.level>
+  <armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcccpp.compiler.warnings.AllWarnings>True</armgcccpp.compiler.warnings.AllWarnings>
+  <armgcccpp.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.Libraries>
+  <armgcccpp.linker.libraries.LibrarySearchPaths>
+    <ListValues>
+      <Value>../cmsis/linkerScripts</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.LibrarySearchPaths>
+  <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
+  <armgcccpp.linker.miscellaneous.LinkerFlags>-Tsamd21e18a_flash.ld</armgcccpp.linker.miscellaneous.LinkerFlags>
+  <armgcccpp.preprocessingassembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\samd21\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+    </ListValues>
+  </armgcccpp.preprocessingassembler.general.IncludePaths>
+</ArmGccCpp>
+    </ToolchainSettings>
+    <VMSETTING_IncludePaths>../../../finalSensorSvetloPohyb;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries/ESP8266WiFi/src;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries/EEPROM;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries/Ticker;C:/Users/svita/Documents/Arduino/libraries/DHT_sensor_library-1.3.7;C:/Users/svita/Documents/Arduino/libraries/MySQL_Connector_Arduino-master/src;C:/Program Files (x86)/Arduino/libraries;C:/Users/svita/Documents/Arduino/libraries;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266/avr;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266/libb64;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266/spiffs;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266/umm_malloc;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/variants/nodemcu;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/tools/sdk/include;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/tools/sdk/lwip/include;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/tools/sdk/libc/xtensa-lx106-elf/include;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-3-20ed2b9/xtensa-lx106-elf/include/c++/4.8.2;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-3-20ed2b9/xtensa-lx106-elf/include/c++/4.8.2/xtensa-lx106-elf;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-3-20ed2b9/xtensa-lx106-elf/include;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/2.5.0-3-20ed2b9/lib/gcc/xtensa-lx106-elf/4.8.2/include;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/tools/sdk/lwip2/include;C:/Users/svita/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries/Wire;C:/Users/svita/Documents/Arduino/libraries/BH1750-master;{build.path}/core;</VMSETTING_IncludePaths>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="finalSensorSvetloPohyb.ino">
+      <SubType>compile</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="__vm\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="__vm\.finalSensorSvetloPohyb.vsarduino.h">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>

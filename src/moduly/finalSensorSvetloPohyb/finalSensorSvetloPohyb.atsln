@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Atmel Studio Solution File, Format Version 11.00
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "finalSensorSvetloPohyb", "finalSensorSvetloPohyb.cppproj", "{4121ADD4-5B5B-4005-8802-7D40E115022F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Release|ARM = Release|ARM
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4121ADD4-5B5B-4005-8802-7D40E115022F}.Debug|ARM.ActiveCfg = Debug|ARM
+		{4121ADD4-5B5B-4005-8802-7D40E115022F}.Debug|ARM.Build.0 = Debug|ARM
+		{4121ADD4-5B5B-4005-8802-7D40E115022F}.Release|ARM.ActiveCfg = Release|ARM
+		{4121ADD4-5B5B-4005-8802-7D40E115022F}.Release|ARM.Build.0 = Release|ARM
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

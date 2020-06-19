@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Atmel Studio Solution File, Format Version 11.00
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "MalyArduinatkoRelatka", "MalyArduinatkoRelatka.cppproj", "{62B256E7-6C86-43CB-BDF4-E9818E47CB23}"
+EndProject
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "proRelatka", "..\proRelatka\proRelatka.cppproj", "{D0CBDD90-0667-4C53-BE27-933FB5158644}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|AVR = Debug|AVR
+		Release|ARM = Release|ARM
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62B256E7-6C86-43CB-BDF4-E9818E47CB23}.Debug|ARM.ActiveCfg = Debug|AVR
+		{62B256E7-6C86-43CB-BDF4-E9818E47CB23}.Debug|AVR.ActiveCfg = Debug|AVR
+		{62B256E7-6C86-43CB-BDF4-E9818E47CB23}.Debug|AVR.Build.0 = Debug|AVR
+		{62B256E7-6C86-43CB-BDF4-E9818E47CB23}.Release|ARM.ActiveCfg = Release|AVR
+		{62B256E7-6C86-43CB-BDF4-E9818E47CB23}.Release|AVR.ActiveCfg = Release|AVR
+		{62B256E7-6C86-43CB-BDF4-E9818E47CB23}.Release|AVR.Build.0 = Release|AVR
+		{D0CBDD90-0667-4C53-BE27-933FB5158644}.Debug|ARM.ActiveCfg = Debug|ARM
+		{D0CBDD90-0667-4C53-BE27-933FB5158644}.Debug|ARM.Build.0 = Debug|ARM
+		{D0CBDD90-0667-4C53-BE27-933FB5158644}.Debug|AVR.ActiveCfg = Debug|ARM
+		{D0CBDD90-0667-4C53-BE27-933FB5158644}.Release|ARM.ActiveCfg = Release|ARM
+		{D0CBDD90-0667-4C53-BE27-933FB5158644}.Release|ARM.Build.0 = Release|ARM
+		{D0CBDD90-0667-4C53-BE27-933FB5158644}.Release|AVR.ActiveCfg = Release|ARM
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
